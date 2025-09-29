@@ -1,11 +1,11 @@
-.BrandHero {
+.Brandfore {
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 0 1rem;
 }
-.Brandhero__box {
+.Brandfore__box {
   width: 50%;
   height: 100vh;
   display: flex;
@@ -14,19 +14,19 @@
   align-items: center;
   gap: 30px;
 }
-.Brandhero__box > div > h5 {
+.Brandfore__box > div > h5 {
   font-size: 26px;
   margin-bottom: 50px;
 }
-.Brandhero__box > div > p {
+.Brandfore__box > div > p {
   font-size: 16px;
   line-height: 1.8;
 }
-.BrandHero__Picture {
+.Brandfore__Picture {
   width: 50%;
   height: 100vh;
 }
-.BrandHero__Picture > img {
+.Brandfore__Picture > img {
   width: 100%;
   height: 100%;
   object-fit: cover;
