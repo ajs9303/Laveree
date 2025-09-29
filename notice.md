@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # 깃 커밋 주소: https://github.com/ajs9303/Laveree
 - 한시간 간격으로 올리기
 
