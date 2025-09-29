@@ -26,8 +26,8 @@ Laveree/
    수요일까지 완료 후, 목요일 오전에 최종 점검
 
 # 공통 사항
-id, class 변수명은 카멜
-brand, shop, mag
-picture -> img
-css, js 따로, index.html
-기본 좌우 패딩: 1rem
+- id, class 변수명은 카멜
+- brand, shop, mag
+- picture -> img
+- css, js 따로, index.html
+- 기본 좌우 패딩: 1rem
