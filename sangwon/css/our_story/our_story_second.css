@@ -1,0 +1,30 @@
+.BrandSecond {
+  margin-top: 80px;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../../image/story_full_img1.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.BrandSecond > h5 {
+  font-size: 26px;
+  color: white;
+  text-align: center;
+}
+.BrandSecond > p {
+  font-size: 16px;
+  color: white;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.libre-caslon-text-regular > span {
+  font-size: 120px;
+  font-family: "Cafe24LovingU";
+  line-height: 0.35;
+  border-bottom: 1px solid rgb(255, 255, 255);
+}

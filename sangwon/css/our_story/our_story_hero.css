@@ -1,0 +1,42 @@
+.Brandleft {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+}
+.margintop {
+  margin-top: 80px;
+}
+.Brandleft__box {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.Brandleft__box > div > h5 {
+  font-size: 26px;
+  margin-bottom: 50px;
+}
+.Brandleft__box > div > p {
+  font-size: 16px;
+  line-height: 1.8;
+}
+.Brandleft__Picture {
+  width: 50%;
+  height: 100vh;
+}
+.Brandleft__Picture > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.libre-caslon-text-regular > span {
+  font-size: 120px;
+  font-family: "Cafe24LovingU";
+  line-height: 0.35;
+  border-bottom: 1px solid black;
+}
