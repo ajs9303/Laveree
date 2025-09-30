@@ -1,0 +1,10 @@
+/* 하단 고정 코멘트 */
+#lowerTexts {
+  padding: 4rem 0 4.25rem;
+  text-align: center;
+}
+
+#lowerTexts > .comment {
+  font-family: "Noto Serif KR", serif;
+  line-height: 1.7;
+}
