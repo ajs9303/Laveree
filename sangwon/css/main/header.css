@@ -5,12 +5,12 @@
   left: 0;
   background-color: transparent;
   transition: all 0.5s;
-  z-index: 99999;
+  z-index: 9999;
 }
 .mainHeader__nav {
   display: flex;
-  padding: 20px 20px;
-  margin: 0 20px;
+  padding: 1rem;
+  margin: 0 2rem;
   justify-content: space-between;
 }
 .mainHeader:hover {
@@ -19,14 +19,14 @@
 .mainHeader__nav__left {
   width: 100%;
   display: flex;
-  gap: 90px;
+  gap: 5rem;
 }
 .mainHeader__nav__div__h1 {
-  width: 126px;
+  width: 8rem;
 }
 .mainHeader__nav__div__ul {
   display: flex;
-  gap: 60px;
+  gap: 4rem;
 }
 
 .mainHeader__nav__div__ul > li {
@@ -35,19 +35,19 @@
   align-items: center;
 }
 .mainHeader__nav__div__ul > li > span {
-  font-size: 12px;
+  font-size: 0.8rem;
 }
 .mainHeader__nav__right__ul {
   display: flex;
   justify-content: flex-end;
-  gap: 50px;
+  gap: 0.8rem;
 }
 .mainHeader__nav__right__ul > li {
-  width: 50px;
+  width: 4rem;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .mainHeader__nav__right__ul > li > span {
-  font-size: 12px;
+  font-size: 0.8rem;
 }
