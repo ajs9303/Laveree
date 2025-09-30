@@ -27,13 +27,14 @@
 }
 .mainHeader__nav__div__ul {
   display: flex;
-  gap: 4rem;
+  align-items: flex-start;
+  padding-top: 0.5rem;
 }
 
 .mainHeader__nav__div__ul > li {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 .mainHeader__nav__div__ul > li > span {
   font-size: 0.8rem;
@@ -53,11 +54,7 @@
   font-size: 0.8rem;
 }
 .hiddentitle {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  display: none;
 }
 .hiddentitle li {
   width: 100%;
@@ -65,9 +62,37 @@
   color: gray;
   position: relative;
 }
-
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+}
+#BRAND {
+  margin-right: 4rem;
+}
+#BRAND:hover {
+  margin-right: 0;
+}
+#SHOP {
+  margin-right: 4rem;
+}
+#SHOP:hover {
+  margin-right: 0;
+}
+#MAGAZINE {
+  margin-right: 4rem;
+}
+#MAGAZINE:hover {
+  margin-right: 0;
+}
+#COMMUNITY {
+  margin-right: 4rem;
+}
+#COMMUNITY:hover {
+  margin-right: 0;
+}
 .BRAND {
-  position: absolute;
   top: 0;
   left: 0;
   top: 4rem;
@@ -75,6 +100,7 @@
   gap: 1rem;
   display: flex;
   flex-direction: column;
+  margin-right: 4rem;
 }
 .hiddentitle li::after {
   content: "";
@@ -86,17 +112,15 @@
   background-color: gray;
 }
 .SHOP {
-  position: absolute;
   top: 0;
   left: 0;
   top: 4rem;
-  left: 21.5rem;
+  left: 15rem;
   gap: 1rem;
   display: flex;
   flex-direction: column;
 }
 .MAGAZIN {
-  position: absolute;
   top: 0;
   left: 0;
   top: 4rem;
@@ -106,7 +130,6 @@
   flex-direction: column;
 }
 .COMMUNITY {
-  position: absolute;
   top: 0;
   left: 0;
   top: 4rem;
@@ -116,7 +139,6 @@
   flex-direction: column;
 }
 .STORE {
-  position: absolute;
   top: 0;
   left: 0;
   top: 4rem;

@@ -24,7 +24,7 @@
       href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Noto+Sans+KR:wght@100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../css/font.css" />
+    <link rel="stylesheet" href="../sangwon/css/font.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="js/index.js" defer></script>
   </head>
@@ -100,11 +100,55 @@
             </a>
           </h1>
           <ul class="mainHeader__nav__div__ul">
-            <li id="BRAND"><span>BRAND</span></li>
-            <li id="SHOP"><span>SHOP</span></li>
-            <li id="MAGAZINE"><span>MAGAZINE</span></li>
-            <li id="COMMUNITY"><span>COMMUNITY</span></li>
-            <li id="STORE"><span>STORE</span></li>
+            <li id="BRAND" class="title">
+              <span>BRAND</span>
+              <div class="hiddenbrand hiddentitle">
+                <ul class="BRAND hiddenfont">
+                  <li>OUR STORY</li>
+                  <li>SCIENCE</li>
+                  <li>DERMATOLOGY</li>
+                </ul>
+              </div>
+            </li>
+            <li id="SHOP" class="title">
+              <span>SHOP</span>
+              <div class="hiddenshop hiddentitle">
+                <ul class="SHOP hiddenfont">
+                  <li>ALL</li>
+                  <li>DETELGENT</li>
+                  <li>REMOVER</li>
+                  <li>GIFT</li>
+                  <li>ACC</li>
+                </ul>
+              </div>
+            </li>
+            <li id="MAGAZINE" class="title">
+              <span>MAGAZINE</span>
+              <div class="hiddenmagazin hiddentitle">
+                <ul class="MAGAZIN hiddenfont">
+                  <li>PROJECT</li>
+                  <li>PRESS</li>
+                </ul>
+              </div>
+            </li>
+            <li id="COMMUNITY" class="title">
+              <span>COMMUNITY</span>
+              <div class="hiddencommunity hiddentitle">
+                <ul class="COMMUNITY hiddenfont">
+                  <li>NOTICE</li>
+                  <li>FAQ</li>
+                </ul>
+              </div>
+            </li>
+            <li id="STORE" class="title">
+              <span>STORE</span>
+              <div class="hiddenstore hiddentitle">
+                <ul class="STORE hiddenfont">
+                  <li>KOREA</li>
+                  <li>GLOBAL</li>
+                </ul>
+              </div>
+            </li>
           </ul>
         </div>
         <div class="mainHeader__nav__right">
@@ -116,40 +160,6 @@
           </ul>
         </div>
       </nav>
-      <div class="hiddenbrand hiddentitle">
-        <ul class="BRAND hiddenfont">
-          <li>OUR STORY</li>
-          <li>SCIENCE</li>
-          <li>DERMATOLOGY</li>
-        </ul>
-      </div>
-      <div class="hiddenshop hiddentitle">
-        <ul class="SHOP hiddenfont">
-          <li>ALL</li>
-          <li>DETELGENT</li>
-          <li>REMOVER</li>
-          <li>GIFT</li>
-          <li>ACC</li>
-        </ul>
-      </div>
-      <div class="hiddenmagazin hiddentitle">
-        <ul class="MAGAZIN hiddenfont">
-          <li>PROJECT</li>
-          <li>PRESS</li>
-        </ul>
-      </div>
-      <div class="hiddencommunity hiddentitle">
-        <ul class="COMMUNITY hiddenfont">
-          <li>NOTICE</li>
-          <li>FAQ</li>
-        </ul>
-      </div>
-      <div class="hiddenstore hiddentitle">
-        <ul class="STORE hiddenfont">
-          <li>KOREA</li>
-          <li>GLOBAL</li>
-        </ul>
-      </div>
     </header>
     <section class="mainhero">
       <!-- Slider main container -->
@@ -231,12 +241,9 @@
               <div class="swiper-slide">Slide 9</div>
               <div class="swiper-slide">Slide 10</div>
             </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination swiper-pagination-B"></div>
-
             <!-- If we need navigation buttons -->
-            <div class="swiper1-button-prev"></div>
-            <div class="swiper1-button-next"></div>
+            <div class="swiper-button-prev swiper_a"></div>
+            <div class="swiper-button-next swiper_b"></div>
           </div>
         </div>
         <div class="mainBox_innertext">
