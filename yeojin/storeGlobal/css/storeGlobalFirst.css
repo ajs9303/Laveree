@@ -1,0 +1,46 @@
+.storeGlobal {
+  width: 100%;
+  max-width: 1160px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.storeGlobal > .storeGlobal__first {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.storeGlobal > .storeGlobal__first > h2 {
+  font-family: Pretendard;
+  color: #000000;
+  font-size: 1.375rem;
+  margin: 2rem;
+}
+
+.storeGlobal > .storeGlobal__first > ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 3rem;
+  margin: 2rem;
+}
+
+.storeGlobal > .storeGlobal__first > ul > li {
+  cursor: pointer;
+  font-family: Pretendard;
+  color: #000000;
+  font-size: 0.8125rem;
+}
+
+.storeGlobal > .storeGlobal__first > ul > .storeGlobal__list2 {
+  text-decoration: underline;
+}

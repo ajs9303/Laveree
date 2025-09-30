@@ -1,0 +1,46 @@
+.storeKorea {
+  width: 100%;
+  max-width: 1160px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.storeKorea > .storeKorea__first {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.storeKorea > .storeKorea__first > h2 {
+  font-family: Pretendard;
+  color: #000000;
+  font-size: 1.375rem;
+  margin: 2rem;
+}
+
+.storeKorea > .storeKorea__first > ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 3rem;
+  margin: 2rem;
+}
+
+.storeKorea > .storeKorea__first > ul > li {
+  cursor: pointer;
+  font-family: Pretendard;
+  color: #000000;
+  font-size: 0.8125rem;
+}
+
+.storeKorea > .storeKorea__first > ul > .storeKorea__list {
+  text-decoration: underline;
+}

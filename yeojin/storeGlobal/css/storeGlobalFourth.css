@@ -1,0 +1,35 @@
+.storeGlobal__fourth {
+  width: 100%;
+  margin: 4.0625rem auto 6.25rem;
+}
+
+.storeGlobal__fourth > h1 {
+  font-family: Pretendard;
+  color: #000000;
+  font-size: 0.875rem;
+  font-weight: 700;
+  margin: 0 0 4.0625rem;
+}
+
+.storeGlobal__fourth > article {
+  display: flex;
+  flex-direction: row;
+}
+
+.storeGlobal__fourth > article > div {
+  width: 22.375rem;
+  float: left;
+  margin-right: 2.5rem;
+}
+
+.storeGlobal__fourth > article > div > h2 {
+  font-size: 0.875rem;
+  font-weight: 700;
+  margin-bottom: 0.625rem;
+}
+
+.storeGlobal__fourth > article > div > p {
+  font-size: 0.75rem;
+  font-weight: 400;
+  margin-bottom: 0.3125rem;
+}

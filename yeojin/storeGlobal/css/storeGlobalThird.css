@@ -1,0 +1,49 @@
+.storeGlobal__third {
+  width: 100%;
+  margin-top: 7.8125rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.storeGlobal__third > h1 {
+  font-family: Pretendard;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 4.0625rem;
+}
+
+.storeGlobal__third > article {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+
+.storeGlobal__third > article > div > picture {
+  width: 100%;
+}
+
+.storeGlobal__third > article > div > picture > img {
+  width: 100%;
+  margin: 0 0 0.6rem;
+}
+
+.storeGlobal__third > article > div > h2 {
+  font-family: Pretendard;
+  font-weight: 600;
+  color: #000000;
+  font-size: 0.875rem;
+  margin: 0 0 0.6rem;
+}
+
+.storeGlobal__third > article > div > p {
+  font-family: Pretendard;
+  color: #000000;
+  font-size: 0.75rem;
+  margin: 0 0 0.4rem;
+}
+
+.storeGlobal__third > article > div > span {
+  font-family: Pretendard;
+  color: #888888;
+  font-size: 0.625rem;
+}
