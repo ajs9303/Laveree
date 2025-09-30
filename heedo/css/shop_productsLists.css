@@ -1,0 +1,73 @@
+/* ProductSection */
+#sectionShop > #container > #listProducts {
+  position: relative;
+
+  margin: 0 auto;
+
+  max-width: 1485px;
+  min-width: 1220px;
+  width: 100%;
+  padding: 0 10px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+#sectionShop > #container > #listProducts > #userList > ul {
+  display: flex;
+  flex-direction: row;
+}
+
+#sectionShop > #container > #listProducts > #userList {
+  padding-top: 4rem;
+  margin-bottom: 2rem;
+}
+
+#sectionShop > #container > #listProducts > #userList > ul > .categoryLists {
+  margin-right: 2.5rem;
+
+  font-family: "Poppins", sans-serif;
+  font-weight: 550;
+  font-size: 12px;
+  letter-spacing: 0.105625rem;
+
+  position: relative;
+}
+
+/* a Grid box */
+#sectionShop > #container > #listProducts > #productsGrid {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+#sectionShop > #container > #listProducts > #productsGrid > #prdLis {
+  width: 100%;
+  margin-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* images in Grid */
+#sectionShop
+  > #container
+  > #listProducts
+  > #productsGrid
+  > #prdLis
+  > #prdLisPic {
+  margin: 0 2rem 0 2rem;
+}
+
+#sectionShop
+  > #container
+  > #listProducts
+  > #productsGrid
+  > #prdLis
+  > #prdLisPic
+  > #prdLisPicImg {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
