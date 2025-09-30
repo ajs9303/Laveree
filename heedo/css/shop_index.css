@@ -48,12 +48,14 @@ img {
 }
 
 #sectionShop > #container > #listProducts > #userList > ul > .categoryLists {
-  padding-right: 2.5rem;
+  margin-right: 2.5rem;
 
   font-family: "Poppins", sans-serif;
   font-weight: 550;
   font-size: 12px;
   letter-spacing: 0.105625rem;
+
+  position: relative;
 }
 
 #sectionShop > #container > #listProducts > #productsGrid {

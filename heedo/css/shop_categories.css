@@ -1,0 +1,32 @@
+/* 상단 category 메뉴 밑줄 */
+#sectionShop
+  > #container
+  > #listProducts
+  > #userList
+  > ul
+  > .categoryLists
+  > a::after {
+  content: "";
+  width: 100%;
+  top: 100%;
+  left: 0%;
+  position: absolute;
+  transform-origin: left;
+  transform: scale(0);
+  background-color: black;
+  transition: all 0.3s;
+  opacity: 0.5;
+
+  height: 0.06rem;
+}
+
+#sectionShop
+  > #container
+  > #listProducts
+  > #userList
+  > ul
+  > .categoryLists:hover
+  > a::after {
+  transform: scale(1);
+  opacity: 1;
+}

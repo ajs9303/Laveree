@@ -105,3 +105,9 @@
   font-weight: 900;
   font-style: italic;
 }
+/* noto serif Kr */
+.noto-serif-kr {
+  font-family: "Noto Serif KR", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}

@@ -1,0 +1,52 @@
+.mainHeader {
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  transition: all 0.5s;
+}
+.mainHeader__nav {
+  display: flex;
+  padding: 20px 20px;
+  margin: 0 20px;
+  justify-content: space-between;
+}
+.mainHeader:hover {
+  background-color: white;
+}
+.mainHeader__nav__left {
+  width: 100%;
+  display: flex;
+  gap: 90px;
+}
+.mainHeader__nav__div__h1 {
+  width: 126px;
+}
+.mainHeader__nav__div__ul {
+  display: flex;
+  gap: 60px;
+}
+
+.mainHeader__nav__div__ul > li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mainHeader__nav__div__ul > li > span {
+  font-size: 12px;
+}
+.mainHeader__nav__right__ul {
+  display: flex;
+  justify-content: flex-end;
+  gap: 50px;
+}
+.mainHeader__nav__right__ul > li {
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mainHeader__nav__right__ul > li > span {
+  font-size: 12px;
+}
