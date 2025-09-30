@@ -2,7 +2,8 @@
   margin-top: 80px;
   width: 100vw;
   height: 100vh;
-  background-image: url(../../image/story_full_img1.jpg);
+  background-image: url(../../image/our_story/story_full_img1.jpg);
+  background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -26,5 +27,7 @@
   font-size: 120px;
   font-family: "Cafe24LovingU";
   line-height: 0.35;
-  border-bottom: 1px solid rgb(255, 255, 255);
+}
+.libre-caslon-text-regular > span::before {
+  content: "";
 }
