@@ -6,22 +6,22 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/font.css" />
-    <link rel="stylesheet" href="css/storeKoreaFirst.css" />
-    <link rel="stylesheet" href="css/storeKoreaSecond.css" />
-    <link rel="stylesheet" href="css/storeKoreaThird.css" />
-    <link rel="stylesheet" href="css/storeKoreaFourth.css" />
+    <link rel="stylesheet" href="css/store.css" />
   </head>
   <body>
-    <div class="storeKorea">
-      <div class="storeKorea__first">
+    <div class="store">
+      <div class="store__first">
         <h2>STORE</h2>
         <ul>
-          <li class="storeKorea__list">KOREA</li>
-          <li class="storeKorea__list2">GLOBAL</li>
+          <li id="korea" class="seleted">
+            <a href="storeKorea.html">KOREA</a>
+          </li>
+          <li><a href="storeGlobal.html">GLOBAL</a></li>
         </ul>
       </div>
 
       <div class="storeKorea__second">
+        <h1>OFFLINE</h1>
         <div class="storeKorea__second__main">
           <picture><img src="img/korea_store01.jpg" alt="" /></picture>
           <div class="storeKorea__second__title">
@@ -32,7 +32,7 @@
           </div>
         </div>
 
-        <div class="storeKorea__second__list">
+        <div class="store__list">
           <h1>DEPARTMENT STORE</h1>
           <article>
             <div>
@@ -85,8 +85,8 @@
           </article>
         </div>
 
-        <div class="storeKorea__third">
-          <h1>ANANTI</h1>
+        <div class="store__bottom border">
+          <h1 class="ananti">ANANTI</h1>
           <article>
             <div>
               <h2>가평 아난티 코드</h2>
@@ -105,48 +105,55 @@
           </article>
         </div>
 
-        <div class="storeKorea__fourth">
+        <div class="store__bottom">
           <h1>ONLINE</h1>
 
-          <article>
-            <div>
+          <article class="grid">
+            <div class="marginBottom">
               <h2>카카오톡 선물하기</h2>
-              <a href="https://gift.kakao.com/brand/17166"
+              <a
+                class="marginBottom__link"
+                href="https://gift.kakao.com/brand/17166"
                 ><p>gift.kakao.com</p></a
               >
             </div>
 
-            <div>
+            <div class="marginBottom">
               <h2>쓱닷컴</h2>
               <a
+                class="marginBottom__link"
                 href="https://www.ssg.com/disp/brandShop.ssg?brandId=3000068049&ctgId=6000174583"
                 ><p>gift.kakao.com</p></a
               >
             </div>
 
-            <div>
+            <div class="marginBottom">
               <h2>베네피아</h2>
-              <p class="storeKorea__fourth__Notlink">benepia.co.kr</p>
+              <p class="marginBottom__notlink">benepia.co.kr</p>
             </div>
 
-            <div>
+            <div class="marginBottom">
               <h2>아난티 이터널저니</h2>
-              <a href="https://eternaljourney.ananti.kr/brand/1456"
+              <a
+                class="marginBottom__link"
+                href="https://eternaljourney.ananti.kr/brand/1456"
                 ><p>eternaljourney.ananti.kr</p></a
               >
             </div>
 
-            <div>
+            <div class="marginBottom">
               <h2>LF몰</h2>
               <a
+                class="marginBottom__link"
                 href="https://www.lfmall.co.kr/app/exhibition/brandGroup/22179?brandUrl=LAVEREE&saleType=3"
                 ><p>lfmall.co.kr</p></a
               >
             </div>
 
-            <div>
+            <div class="marginBottom">
               <h2>29CM</h2>
               <a
+                class="marginBottom__link"
                 href="https://shop.29cm.co.kr/brand/88724?sort=RECOMMENDED&page=1"
                 ><p>29cm.co.kr</p></a
               >
