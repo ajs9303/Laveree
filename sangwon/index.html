@@ -29,7 +29,7 @@
     <script src="js/index.js" defer></script>
   </head>
   <body>
-    <header class="mainHeader">
+    <header id="mainHeader" class="mainHeader">
       <nav class="mainHeader__nav">
         <div class="mainHeader__nav__left">
           <h1 class="mainHeader__nav__div__h1">
@@ -100,11 +100,11 @@
             </a>
           </h1>
           <ul class="mainHeader__nav__div__ul">
-            <li><span>BRAND</span></li>
-            <li><span>SHOP</span></li>
-            <li><span>MAGAZINE</span></li>
-            <li><span>COMMUNITY</span></li>
-            <li><span>STORE</span></li>
+            <li id="BRAND"><span>BRAND</span></li>
+            <li id="SHOP"><span>SHOP</span></li>
+            <li id="MAGAZINE"><span>MAGAZINE</span></li>
+            <li id="COMMUNITY"><span>COMMUNITY</span></li>
+            <li id="STORE"><span>STORE</span></li>
           </ul>
         </div>
         <div class="mainHeader__nav__right">
@@ -116,6 +116,40 @@
           </ul>
         </div>
       </nav>
+      <div class="hiddenbrand hiddentitle">
+        <ul class="BRAND hiddenfont">
+          <li>OUR STORY</li>
+          <li>SCIENCE</li>
+          <li>DERMATOLOGY</li>
+        </ul>
+      </div>
+      <div class="hiddenshop hiddentitle">
+        <ul class="SHOP hiddenfont">
+          <li>ALL</li>
+          <li>DETELGENT</li>
+          <li>REMOVER</li>
+          <li>GIFT</li>
+          <li>ACC</li>
+        </ul>
+      </div>
+      <div class="hiddenmagazin hiddentitle">
+        <ul class="MAGAZIN hiddenfont">
+          <li>PROJECT</li>
+          <li>PRESS</li>
+        </ul>
+      </div>
+      <div class="hiddencommunity hiddentitle">
+        <ul class="COMMUNITY hiddenfont">
+          <li>NOTICE</li>
+          <li>FAQ</li>
+        </ul>
+      </div>
+      <div class="hiddenstore hiddentitle">
+        <ul class="STORE hiddenfont">
+          <li>KOREA</li>
+          <li>GLOBAL</li>
+        </ul>
+      </div>
     </header>
     <section class="mainhero">
       <!-- Slider main container -->
