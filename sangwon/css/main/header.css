@@ -5,6 +5,7 @@
   left: 0;
   background-color: transparent;
   transition: all 0.5s;
+  z-index: 99999;
 }
 .mainHeader__nav {
   display: flex;
