@@ -5,16 +5,27 @@
   > #userList
   > ul
   > .categoryLists
-  > a::after {
+  > div {
+  cursor: pointer;
+}
+
+#sectionShop
+  > #container
+  > #listProducts
+  > #userList
+  > ul
+  > .categoryLists
+  > div::after {
   content: "";
   width: 100%;
   top: 100%;
   left: 0%;
   position: absolute;
   transform-origin: left;
-  transform: scale(0);
+
   background-color: black;
   transition: all 0.3s;
+  transform: scale(0);
   opacity: 0.5;
 
   height: 0.06rem;
@@ -26,7 +37,7 @@
   > #userList
   > ul
   > .categoryLists:hover
-  > a::after {
+  > div::after {
   transform: scale(1);
   opacity: 1;
 }
