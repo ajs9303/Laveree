@@ -5,6 +5,7 @@ const productLists = [
     details: "얼룩제거제 295ML",
     imgSrc: "/Laveree-main/heedo/shop_images/products/stain_remover.jpg",
     categoryType: ["ALL", "REMOVER"],
+    stock: "sold-out",
   },
   {
     name: "DETERGENT - FOREST",
@@ -12,6 +13,7 @@ const productLists = [
     details: "세탁세제 900ML",
     imgSrc: "/Laveree-main/heedo/shop_images/products/detergent_forest.jpg",
     categoryType: ["ALL", "DETERGENT"],
+    stock: "available",
   },
   {
     name: "DETERGENT - WIND",
@@ -19,6 +21,7 @@ const productLists = [
     details: "세탁세제 900ML",
     imgSrc: "/Laveree-main/heedo/shop_images/products/detergent_wind.jpg",
     categoryType: ["ALL", "DETERGENT"],
+    stock: "available",
   },
   {
     name: "[GIFT] DETERGENT",
@@ -26,6 +29,7 @@ const productLists = [
     details: "선물포장 세탁세제 900ML",
     imgSrc: "/Laveree-main/heedo/shop_images/products/detergent_gift.jpg",
     categoryType: ["ALL", "DETERGENT", "GIFT"],
+    stock: "available",
   },
   {
     name: "[GIFT] STAIN REMOVER",
@@ -33,6 +37,7 @@ const productLists = [
     details: "선물포장 얼룩제거제 295ML",
     imgSrc: "/Laveree-main/heedo/shop_images/products/stain_remover_gift.jpg",
     categoryType: ["ALL", "REMOVER", "GIFT"],
+    stock: "sold-out",
   },
   {
     name: "WASHING DUO",
@@ -40,6 +45,7 @@ const productLists = [
     details: "2종 선물세트",
     imgSrc: "/Laveree-main/heedo/shop_images/products/washing_duo.jpg",
     categoryType: ["ALL", "GIFT"],
+    stock: "available",
   },
   {
     name: "ESSENTIAL DUO",
@@ -47,6 +53,7 @@ const productLists = [
     details: "2종 선물세트",
     imgSrc: "/Laveree-main/heedo/shop_images/products/essential_duo.jpg",
     categoryType: ["ALL", "GIFT"],
+    stock: "available",
   },
   {
     name: "ULTIMATE TRIO",
@@ -54,6 +61,7 @@ const productLists = [
     details: "3종 선물세트",
     imgSrc: "/Laveree-main/heedo/shop_images/products/ultimate_trio.jpg",
     categoryType: ["ALL", "GIFT"],
+    stock: "available",
   },
   {
     name: "[TRAVEL] REMOVER STICKER POUCH",
@@ -62,6 +70,7 @@ const productLists = [
     imgSrc:
       "/Laveree-main/heedo/shop_images/products/remover_sticker_pouch_travel.jpg",
     categoryType: ["ALL", "REMOVER", "GIFT"],
+    stock: "sold-out",
   },
   {
     name: "[TRAVEL] ESSENTIAL DUO",
@@ -69,6 +78,7 @@ const productLists = [
     details: "여행용 2종 선물세트",
     imgSrc: "/Laveree-main/heedo/shop_images/products/essential_duo_travel.jpg",
     categoryType: ["ALL", "GIFT"],
+    stock: "sold-out",
   },
   {
     name: "[TRAVEL] STAIN REMOVER",
@@ -76,6 +86,7 @@ const productLists = [
     details: "얼룩제거제 59ML",
     imgSrc: "/Laveree-main/heedo/shop_images/products/stain_remover_travel.jpg",
     categoryType: ["ALL", "REMOVER"],
+    stock: "sold-out",
   },
   {
     name: "[TRAVEL] DETERGENT - FOREST",
@@ -84,6 +95,7 @@ const productLists = [
     imgSrc:
       "/Laveree-main/heedo/shop_images/products/detergent_forest_travel.jpg",
     categoryType: ["ALL", "DETERGENT"],
+    stock: "sold-out",
   },
   {
     name: "[TRAVEL] DETERGENT - WIND",
@@ -92,6 +104,7 @@ const productLists = [
     imgSrc:
       "/Laveree-main/heedo/shop_images/products/detergent_wind_travel.jpg",
     categoryType: ["ALL", "DETERGENT"],
+    stock: "sold-out",
   },
   {
     name: "ECO BAG",
@@ -99,6 +112,7 @@ const productLists = [
     details: "에코백",
     imgSrc: "/Laveree-main/heedo/shop_images/products/eco_bag.jpg",
     categoryType: ["ALL", "ACC"],
+    stock: "available",
   },
   {
     name: "LAVEREE X BLOOMINGTALE",
@@ -106,6 +120,7 @@ const productLists = [
     details: "미니뿌 키링",
     imgSrc: "/Laveree-main/heedo/shop_images/products/Laveree_bloomingtale.jpg",
     categoryType: ["ALL", "ACC"],
+    stock: "available",
   },
   {
     name: "FELT BASKET",
@@ -114,6 +129,7 @@ const productLists = [
     imgSrc: "/Laveree-main/heedo/shop_images/products/felt_basket.png",
 
     categoryType: ["ALL", "ACC"],
+    stock: "available",
   },
   {
     name: "SCRUNCHINE",
@@ -122,6 +138,7 @@ const productLists = [
     imgSrc: "/Laveree-main/heedo/shop_images/products/scrunchie.png",
 
     categoryType: ["ALL", "ACC"],
+    stock: "available",
   },
   {
     name: "PUMP",
@@ -129,6 +146,7 @@ const productLists = [
     details: "세제용 펌프",
     imgSrc: "/Laveree-main/heedo/shop_images/products/pump.jpg",
     categoryType: ["ALL", "ACC"],
+    stock: "sold-out",
   },
   {
     name: "GUN SPRAY",
@@ -136,6 +154,7 @@ const productLists = [
     details: "건 스프레이",
     imgSrc: "/Laveree-main/heedo/shop_images/products/gun_spray.jpg",
     categoryType: ["ALL", "ACC"],
+    stock: "available",
   },
   {
     name: "MEASURING CUP",
@@ -143,6 +162,7 @@ const productLists = [
     details: "세제용 계량컵",
     imgSrc: "/Laveree-main/heedo/shop_images/products/measuring_cup.jpg",
     categoryType: ["ALL", "ACC"],
+    stock: "available",
   },
   {
     name: "SHOPPING BAG",
@@ -151,6 +171,7 @@ const productLists = [
     imgSrc: "/Laveree-main/heedo/shop_images/products/shopping_bag(XS).png",
 
     categoryType: ["ALL", "ACC"],
+    stock: "available",
   },
   {
     name: "SHOPPING BAG",
@@ -158,6 +179,7 @@ const productLists = [
     details: "쇼핑백 (S)",
     imgSrc: "/Laveree-main/heedo/shop_images/products/shopping_bag(S).jpg",
     categoryType: ["ALL", "ACC"],
+    stock: "available",
   },
   {
     name: "SHOPPING BAG",
@@ -165,6 +187,7 @@ const productLists = [
     details: "쇼핑백 (M)",
     imgSrc: "/Laveree-main/heedo/shop_images/products/shopping_bag(M).png",
     categoryType: ["ALL", "ACC"],
+    stock: "available",
   },
 ];
 
@@ -210,13 +233,25 @@ document.addEventListener("DOMContentLoaded", () => {
     prdLisDescDetailUse.id = "prdLisDescDetailUse";
     // 최하위 설명, prdLisDesc 자식, v.details 삽입
 
+    const prdLisStock = document.createElement("div");
+    // 품절 이미지 div, prdLis 자식
+    const prdLisStockSoldout = document.createElement("img");
+    // 품절 이미지, prdLisStock 자식
+
+    // 품절 여부 분류
+    v.stock == "sold-out"
+      ? (prdLisStockSoldout.src =
+          "/Laveree-main/heedo/shop_images/icons/productIcon_soldout.gif")
+      : null;
+
     (prdLisDescDetailName.innerText = v.name),
       (prdLisDescDetailPrice.innerText = v.price),
       (prdLisDescDetailUse.innerText = v.details),
       (prdLisPicImg.src = v.imgSrc);
 
     grid.appendChild(prdLis);
-    prdLis.append(prdLisPic, prdLisDesc);
+    prdLis.append(prdLisPic, prdLisDesc, prdLisStock);
+    prdLisStock.appendChild(prdLisStockSoldout);
     prdLisPic.appendChild(prdLisPicImg);
     prdLisDesc.append(prdLisDescDetail, prdLisDescDetailUse);
     prdLisDescDetail.append(prdLisDescDetailName, prdLisDescDetailPrice);

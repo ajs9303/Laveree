@@ -136,6 +136,7 @@
   font-weight: 500;
 }
 
+/* 카테고리 타입 미해당 시 */
 #sectionShop > #container > #listProducts > #productsGrid > .hidden {
   display: none;
 }
