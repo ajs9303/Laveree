@@ -231,6 +231,7 @@ document.addEventListener("DOMContentLoaded", () => {
   filterLists.forEach((button) => {
     button.addEventListener("click", () => {
       const selectedCategory = button.getAttribute("data-filter");
+      const fixedHoverAfter = document.querySelectorAll(".categoryTag");
 
       // 3. 상품 목록 필터링
       productItems.forEach((item) => {
@@ -240,9 +241,19 @@ document.addEventListener("DOMContentLoaded", () => {
           item.classList.add("hidden");
         }
       });
+      // 4. 클릭 시 브라우저 상단 img.src 변경
       photoTop.src =
         topImg[selectedCategory] ||
         "/Laveree-main/heedo/shop_images/topImages/shop_all_image.jpg";
+
+      // 카테고리 hover after
+      fixedHoverAfter.forEach((after) => {
+        if (after.classList.contains(selectedCategory)) {
+          after.classList.add("fixed");
+        } else {
+          after.classList.remove("fixed");
+        }
+      });
     });
   });
 });
