@@ -1,0 +1,231 @@
+/* shop_index.css */
+img {
+  opacity: 1;
+  transition: opacity ease-out 0.7s;
+}
+
+#sectionShop {
+  width: 100%;
+  position: relative;
+
+  overflow: hidden;
+  margin: 0;
+}
+
+/* topSide */
+#sectionShop > #container > #topSide {
+  width: 100%;
+  margin-bottom: 5rem;
+}
+
+#sectionShop > #container > #topSide > #photoTop > img {
+  width: 100%;
+  object-fit: cover;
+}
+
+/* shop_productsLists.css */
+/* ProductSection */
+#sectionShop > #container > #listProducts {
+  width: 100%;
+  padding: 0 10rem;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+
+  position: relative;
+}
+
+#sectionShop > #container > #listProducts > #userList {
+  padding-top: 4rem;
+  margin-bottom: 2rem;
+}
+
+#sectionShop > #container > #listProducts > #userList > ul {
+  display: flex;
+  flex-direction: row;
+}
+
+#sectionShop > #container > #listProducts > #userList > ul > .categoryLists {
+  margin-right: 2.5rem;
+
+  font-family: "Poppins", sans-serif;
+  font-weight: 550;
+  font-size: 0.75rem;
+  letter-spacing: 0.105625rem;
+
+  position: relative;
+}
+
+/* a Grid box */
+#sectionShop > #container > #listProducts > #productsGrid {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4rem;
+}
+
+#sectionShop > #container > #listProducts > #productsGrid > .prdLis {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* images in Grid */
+#sectionShop
+  > #container
+  > #listProducts
+  > #productsGrid
+  > .prdLis
+  > #prdLisPic {
+  /* margin: 0 2rem 0 2rem; */
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+#sectionShop
+  > #container
+  > #listProducts
+  > #productsGrid
+  > .prdLis
+  > #prdLisPic
+  > #prdLisPicImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  position: relative;
+  cursor: pointer;
+}
+
+#sectionShop
+  > #container
+  > #listProducts
+  > #productsGrid
+  > .prdLis
+  > #prdLisPic::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+
+  top: 100%;
+  left: 0%;
+  bottom: 0%;
+  transform-origin: left;
+  transform: scale(0);
+  transition: all 0.2s;
+  background-color: #000000;
+  height: 0.14rem;
+}
+
+#sectionShop
+  > #container
+  > #listProducts
+  > #productsGrid
+  > .prdLis
+  > #prdLisPic:hover::after {
+  transform: scale(1);
+}
+
+/* GridprdDesc */
+#sectionShop
+  > #container
+  > #listProducts
+  > #productsGrid
+  > .prdLis
+  > #prdLisDesc {
+  width: 100%;
+
+  margin-top: 0.75rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.105625rem;
+  line-height: 1.3;
+
+  font-family: "Poppins", sans-serif;
+}
+
+#sectionShop
+  > #container
+  > #listProducts
+  > #productsGrid
+  > .prdLis
+  > #prdLisDesc
+  > #prdLisDescDetail {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+}
+
+#sectionShop > #container > #listProducts > #productsGrid > .hidden {
+  display: none;
+}
+
+/* shop_categories.css */
+/* 상단 category 메뉴 밑줄 */
+#sectionShop
+  > #container
+  > #listProducts
+  > #userList
+  > ul
+  > .categoryLists
+  > .categoryTag {
+  cursor: pointer;
+}
+
+#sectionShop
+  > #container
+  > #listProducts
+  > #userList
+  > ul
+  > .categoryLists
+  > .categoryTag::after {
+  content: "";
+  width: 100%;
+  top: 100%;
+  left: 0%;
+  position: absolute;
+  transform-origin: left;
+
+  background-color: black;
+  transition: all 0.3s;
+  transform: scale(0);
+  opacity: 0.5;
+
+  height: 0.06rem;
+}
+
+#sectionShop
+  > #container
+  > #listProducts
+  > #userList
+  > ul
+  > .categoryLists:hover
+  > .categoryTag::after {
+  transform: scale(1);
+  opacity: 1;
+}
+
+#sectionShop
+  > #container
+  > #listProducts
+  > #userList
+  > ul
+  > .categoryLists
+  > .fixed::after {
+  transform: scale(1);
+  opacity: 1;
+}
+
+/* 하단 고정 코멘트 */
+#lowerTexts {
+  padding: 4rem 0 4.25rem;
+  text-align: center;
+}
+
+#lowerTexts > .comment {
+  font-family: "Noto Serif KR", serif;
+  line-height: 1.7;
+}
