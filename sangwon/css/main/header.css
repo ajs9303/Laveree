@@ -53,11 +53,13 @@
 .mainHeader__nav__right__ul {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
   gap: 0.8rem;
 }
 .ri-search-line {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .mainHeader__nav__right__ul > li {
   width: 4rem;
@@ -213,7 +215,7 @@
 #STORE:hover > .storehiddenbox {
   display: block;
 }
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
   .logo {
     width: 4rem;
     height: 1rem;
@@ -249,4 +251,4 @@
 }
 .mainHeader__nav__right {
   padding: 8px 0 0;
-}
+} */
