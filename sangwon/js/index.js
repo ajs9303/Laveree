@@ -10,6 +10,7 @@ const swiperB = new Swiper(".swiperB", {
   slidesPerView: 3,
   spaceBetween: 30,
   freeMode: Boolean,
+  loop: true,
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",

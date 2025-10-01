@@ -8,7 +8,7 @@
 .swiper-slide img {
   display: block;
   width: 100%;
-  height: 100%;
+  height: 90%;
   object-fit: cover;
 }
 .swiper-slide__textbox > .libre-caslon-text-regular > span::after {
