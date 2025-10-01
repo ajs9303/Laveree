@@ -1,0 +1,62 @@
+@media screen and (max-width: 768px) {
+  /* 탑 이미지 */
+  #sectionShop > #container > #topSide {
+    margin: 0;
+  }
+  /* 컨테이너 */
+  #sectionShop > #container > #listProducts {
+    position: relative;
+
+    margin: 0 auto;
+
+    max-width: 48rem;
+    min-width: 20rem;
+    width: 100%;
+    padding: 0 1.5rem;
+
+    display: flex;
+    flex-direction: column;
+  }
+  #sectionShop > #container > #listProducts > #userList {
+    padding-top: 4.1875rem;
+  }
+
+  #sectionShop > #container > #listProducts > #userList > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    width: 100%;
+  }
+
+  #sectionShop > #container > #listProducts > #userList > ul > .categoryLists {
+    margin: 0;
+  }
+
+  /* 그리드 프러덕트 리스트 */
+  #sectionShop > #container > #listProducts > #productsGrid {
+    width: 100%;
+    max-width: 768px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  #sectionShop
+    > #container
+    > #listProducts
+    > #productsGrid
+    > .prdLis
+    > #prdLisDesc {
+    font-size: 10px;
+    line-height: 2;
+  }
+
+  /* 하단 텍스트 */
+  #lowerTexts {
+    padding: 0 1.5rem;
+    margin-bottom: 4.0625rem;
+  }
+  #lowerTexts > .comment {
+    font-size: 14px;
+  }
+}

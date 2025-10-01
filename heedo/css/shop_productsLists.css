@@ -13,14 +13,14 @@
   flex-direction: column;
 }
 
-#sectionShop > #container > #listProducts > #userList > ul {
-  display: flex;
-  flex-direction: row;
-}
-
 #sectionShop > #container > #listProducts > #userList {
   padding-top: 4rem;
   margin-bottom: 2rem;
+}
+
+#sectionShop > #container > #listProducts > #userList > ul {
+  display: flex;
+  flex-direction: row;
 }
 
 #sectionShop > #container > #listProducts > #userList > ul > .categoryLists {
