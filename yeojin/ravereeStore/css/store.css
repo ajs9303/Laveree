@@ -123,6 +123,10 @@
   gap: 3rem;
 }
 
+.store__list > article > div {
+  width: 100%;
+}
+
 .store__list > article > div > picture {
   width: 100%;
 }
@@ -157,7 +161,9 @@
 
 .store__bottom {
   width: 100%;
-  margin: 4.0625rem auto 6.25rem;
+  margin-top: 7.8125rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .store__bottom > h1 {
@@ -169,14 +175,13 @@
 }
 
 .store__bottom > article {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
 }
 
 .store__bottom > article > div {
-  width: 22.375rem;
-  float: left;
-  margin-right: 2.5rem;
+  width: 100%;
 }
 
 .store__bottom > article > div > h2 {
@@ -292,7 +297,7 @@
 
   .border {
     display: inline-block; /* 텍스트 길이만큼만 영역 차지 */
-    position: relative;
+    /* position: relative; */
   }
 
   .border::after {
