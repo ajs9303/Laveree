@@ -11,23 +11,25 @@
     />
     <link rel="stylesheet" href="css/main/header.css" />
     <link rel="stylesheet" href="css/main/mainhero.css" />
+    <link rel="stylesheet" href="css/main/mainsecond.css" />
+    <link rel="stylesheet" href="css/our_story/our_story_hero.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-    <link rel="stylesheet" href="../sangwon/css/font.css" />
+    <link rel="stylesheet" href="css/font.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Noto+Sans+KR:wght@100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../css/font.css" />
+    <link rel="stylesheet" href="../sangwon/css/font.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="js/index.js" defer></script>
   </head>
   <body>
-    <header class="mainHeader">
+    <header id="mainHeader" class="mainHeader">
       <nav class="mainHeader__nav">
         <div class="mainHeader__nav__left">
           <h1 class="mainHeader__nav__div__h1">
@@ -98,11 +100,55 @@
             </a>
           </h1>
           <ul class="mainHeader__nav__div__ul">
-            <li><span>BRAND</span></li>
-            <li><span>SHOP</span></li>
-            <li><span>MAGAZINE</span></li>
-            <li><span>COMMUNITY</span></li>
-            <li><span>STORE</span></li>
+            <li id="BRAND" class="title">
+              <span>BRAND</span>
+              <div class="hiddenbrand hiddentitle">
+                <ul class="BRAND hiddenfont">
+                  <li>OUR STORY</li>
+                  <li>SCIENCE</li>
+                  <li>DERMATOLOGY</li>
+                </ul>
+              </div>
+            </li>
+            <li id="SHOP" class="title">
+              <span>SHOP</span>
+              <div class="hiddenshop hiddentitle">
+                <ul class="SHOP hiddenfont">
+                  <li>ALL</li>
+                  <li>DETELGENT</li>
+                  <li>REMOVER</li>
+                  <li>GIFT</li>
+                  <li>ACC</li>
+                </ul>
+              </div>
+            </li>
+            <li id="MAGAZINE" class="title">
+              <span>MAGAZINE</span>
+              <div class="hiddenmagazin hiddentitle">
+                <ul class="MAGAZIN hiddenfont">
+                  <li>PROJECT</li>
+                  <li>PRESS</li>
+                </ul>
+              </div>
+            </li>
+            <li id="COMMUNITY" class="title">
+              <span>COMMUNITY</span>
+              <div class="hiddencommunity hiddentitle">
+                <ul class="COMMUNITY hiddenfont">
+                  <li>NOTICE</li>
+                  <li>FAQ</li>
+                </ul>
+              </div>
+            </li>
+            <li id="STORE" class="title">
+              <span>STORE</span>
+              <div class="hiddenstore hiddentitle">
+                <ul class="STORE hiddenfont">
+                  <li>KOREA</li>
+                  <li>GLOBAL</li>
+                </ul>
+              </div>
+            </li>
           </ul>
         </div>
         <div class="mainHeader__nav__right">
@@ -117,7 +163,8 @@
     </header>
     <section class="mainhero">
       <!-- Slider main container -->
-      <div class="swiper">
+      <div class="swiperA">
+        <div class="swiper-pagination swiper-pagination-A"></div>
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
           <!-- Slides -->
@@ -173,6 +220,104 @@
               </button>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+    <section class="mainSecondSection">
+      <div class="mainBox">
+        <div class="listSlide">
+          <div class="swiperB">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">Slide 1</div>
+              <div class="swiper-slide">Slide 2</div>
+              <div class="swiper-slide">Slide 3</div>
+              <div class="swiper-slide">Slide 4</div>
+              <div class="swiper-slide">Slide 5</div>
+              <div class="swiper-slide">Slide 6</div>
+              <div class="swiper-slide">Slide 7</div>
+              <div class="swiper-slide">Slide 8</div>
+              <div class="swiper-slide">Slide 9</div>
+              <div class="swiper-slide">Slide 10</div>
+            </div>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev swiper_a"></div>
+            <div class="swiper-button-next swiper_b"></div>
+          </div>
+        </div>
+        <div class="mainBox_innertext">
+          <span class="libre-caslon-text-regular Collection"
+            >Explore The Collection</span
+          >
+        </div>
+      </div>
+    </section>
+    <section id="mainfirst" class="BrandContainer">
+      <div class="BrandBox">
+        <div class="innertext">
+          <h5 class="libre-caslon-text-regular">
+            FEEL THE<span class="BrandFont">Love</span>
+          </h5>
+          <p class="libre-caslon-text-regular">
+            우리는 과학이 삶을 조금 더 풍요롭게 만들어준다고 믿습니다.<br />
+            그런 과학에 근거한 라버리는, 당신의 삶과 함께하는 옷과 섬유를<br />
+            깨끗하게 유지시켜줌으로써 당신의 소중한 기억 또한 오래도록 기억될
+            수<br />
+            있도록 해줍니다.
+          </p>
+        </div>
+      </div>
+      <picture class="BrandPicture"
+        ><img src="image/mainanother/media_img1.jpg" alt=""
+      /></picture>
+    </section>
+    <section id="mainsecond" class="BrandContainer margintop">
+      <picture class="BrandPicture"
+        ><img src="image/mainanother/media_img2.jpg" alt=""
+      /></picture>
+      <div class="BrandBox">
+        <div class="innertext">
+          <h5 class="libre-caslon-text-regular">
+            SAFE FOR<span class="BrandFont">Aee</span>
+          </h5>
+          <p class="libre-caslon-text-regular">
+            라버리가 만드는 모든 제품은 과학의 힘이 뒷받침됩니다. <br />
+            최고 등급, 그리고 고농축 성분들로 만들어진 라버리의 제품은<br />
+            옷과 피부, 가족 그리고 지구 모두에게 이롭습니다.
+          </p>
+          <button class="libre-caslon-text-regular Collection learn">
+            LEARN MORE>
+          </button>
+        </div>
+      </div>
+    </section>
+    <section id="mainthird" class="BrandContainer margintop">
+      <div class="BrandBox">
+        <div class="innertext">
+          <h5 class="libre-caslon-text-regular">
+            FIND<span class="BrandFont">Beauty</span> <br />IN THE MUNDANE
+          </h5>
+          <p class="libre-caslon-text-regular">
+            우리는 진정한 행복은 일상 안에 있다고 믿습니다.<br />
+            그러한 당신의 일상을 채워주는 것, 라버리입니다.
+          </p>
+        </div>
+      </div>
+      <picture class="BrandPicture"
+        ><img src="image/mainanother/media_img3.jpg" alt=""
+      /></picture>
+    </section>
+    <section id="mainfour" class="BrandContainer margintop">
+      <picture class="BrandPicture"
+        ><img src="image/mainanother/media_img4.jpeg" alt=""
+      /></picture>
+      <div class="BrandBox">
+        <div class="innertext">
+          <h5 class="libre-caslon-text-regular">
+            DISCOVER OUR<span class="BrandFont">Love</span> <br />OF CLEAN
+          </h5>
+          <button class="lastbtn">SHOP NOW ></button>
         </div>
       </div>
     </section>

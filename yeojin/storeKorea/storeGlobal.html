@@ -6,25 +6,24 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/font.css" />
-    <link rel="stylesheet" href="css/storeGlobalFirst.css" />
-    <link rel="stylesheet" href="css/storeGlobalSecond.css" />
-    <link rel="stylesheet" href="css/storeGlobalThird.css" />
-    <link rel="stylesheet" href="css/storeGlobalFourth.css" />
+    <link rel="stylesheet" href="css/store.css" />
   </head>
   <body>
-    <div class="storeGlobal">
-      <div class="storeGlobal__first">
+    <div class="store">
+      <div class="store__first">
         <h2>STORE</h2>
         <ul>
-          <li class="storeGlobal__list">KOREA</li>
-          <li class="storeGlobal__list2">GLOBAL</li>
+          <li><a href="storeKorea.html">KOREA</a></li>
+          <li id="global" class="seleted">
+            <a href="storeGlobal.html">GLOBAL</a>
+          </li>
         </ul>
       </div>
 
-      <div class="storeGlobal__second">
-        <h1>EREWHON</h1>
+      <div class="store__list padding">
+        <h1 class="globalName">EREWHON</h1>
 
-        <article>
+        <article id="articleFirst">
           <div>
             <picture><img src="img/global_store02.jpg" alt="" /></picture>
             <h2>Beverly Hills</h2>
@@ -97,10 +96,10 @@
         </article>
       </div>
 
-      <div class="storeGlobal__third">
-        <h1>GOOP</h1>
+      <div class="store__list padding">
+        <h1 class="globalName">GOOP</h1>
 
-        <article>
+        <article id="articleSecond">
           <div>
             <picture><img src="img/global_store13.jpg" alt="" /></picture>
             <h2>Bond Street, NY</h2>
@@ -124,10 +123,10 @@
         </article>
       </div>
 
-      <div class="storeGlobal__fourth">
+      <div class="store__bottom padding">
         <h1>ONLINE</h1>
 
-        <article>
+        <article id="articleThird">
           <div>
             <h2>Saks fifth Avenue</h2>
             <p>saksfifthavenue.com</p>
