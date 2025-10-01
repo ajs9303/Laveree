@@ -59,4 +59,8 @@
   #lowerTexts > .comment {
     font-size: 14px;
   }
+
+  #prdLisStock {
+    width: 100%;
+  }
 }

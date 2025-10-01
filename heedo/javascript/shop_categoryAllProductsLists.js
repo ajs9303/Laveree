@@ -234,6 +234,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // 최하위 설명, prdLisDesc 자식, v.details 삽입
 
     const prdLisStock = document.createElement("div");
+    prdLisStock.id = "prdLisStock";
     // 품절 이미지 div, prdLis 자식
     const prdLisStockSoldout = document.createElement("img");
     // 품절 이미지, prdLisStock 자식
