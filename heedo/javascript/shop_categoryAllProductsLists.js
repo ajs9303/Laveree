@@ -221,17 +221,12 @@ document.addEventListener("DOMContentLoaded", () => {
   filterLists.forEach((button) => {
     button.addEventListener("click", () => {
       const selectedCategory = button.getAttribute("data-filter");
-      console.log("Clicked category:", selectedCategory);
+
       // 3. 상품 목록 필터링
       productItems.forEach((item) => {
-        console.log("Checking item:", item.className);
         if (item.classList.contains(selectedCategory)) {
-          console.log(" -> MATCH, showing");
-          item.classList.add("active");
           item.classList.remove("hidden");
         } else {
-          console.log(" -> NO MATCH, showing");
-          item.classList.remove("active");
           item.classList.add("hidden");
         }
       });
