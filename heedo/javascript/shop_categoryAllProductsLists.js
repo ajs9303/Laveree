@@ -168,6 +168,16 @@ export const productLists = [
   },
 ];
 
+const photoTop = document.querySelector("#photoThis");
+const topImg = {
+  ALL: "/Laveree-main/heedo/shop_images/topImages/shop_all_image.jpg",
+  DETERGENT:
+    "/Laveree-main/heedo/shop_images/topImages/shop_detergent_image.jpg",
+  REMOVER: "/Laveree-main/heedo/shop_images/topImages/shop_remover_image.jpg",
+  GIFT: "/Laveree-main/heedo/shop_images/topImages/shop_gift_image.jpg",
+  ACC: "/Laveree-main/heedo/shop_images/topImages/shop_acc_image.jpg",
+};
+
 document.addEventListener("DOMContentLoaded", () => {
   const grid = document.querySelector("#productsGrid");
 
@@ -230,6 +240,9 @@ document.addEventListener("DOMContentLoaded", () => {
           item.classList.add("hidden");
         }
       });
+      photoTop.src =
+        topImg[selectedCategory] ||
+        "/Laveree-main/heedo/shop_images/topImages/shop_all_image.jpg";
     });
   });
 });
