@@ -1,0 +1,289 @@
+.mag {
+  width: 100%;
+  max-width: 1160px;
+  height: 100%;
+  margin: 20vh auto 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mag > .mag__first {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mag > .mag__first > h2 {
+  font-family: Pretendard;
+  color: #000000;
+  font-size: 1.375rem;
+  margin: 2rem;
+}
+
+.mag > .mag__first > ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 3rem;
+  margin: 2rem;
+}
+
+.mag > .mag__first > ul > li {
+  cursor: pointer;
+  font-family: Pretendard;
+  color: #000000;
+  font-size: 0.8125rem;
+}
+
+.mag > .mag__first > ul > .project {
+  text-decoration: underline;
+}
+
+.mag__project {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mag__project > ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+}
+
+.mag__project > ul > li {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: "Pretendard";
+}
+
+.mag__project > ul > li > a > picture {
+  width: 100%;
+}
+
+.mag__project > ul > li > a > picture > img {
+  width: 100%;
+  margin: 0 0 0.6rem;
+}
+
+.mag__project > ul > li > .detail {
+  color: #000000;
+  font-size: 0.75rem;
+}
+
+.mag__project > ul > li > .detail > b {
+  font-weight: 600;
+}
+
+.mag > .mag__project__page {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+  margin: 1.875rem 0;
+  text-align: center;
+}
+
+.mag > .mag__project__page > ul {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.mag > .mag__project__page > ul > li {
+  width: 100%;
+  height: 100%;
+}
+
+.mag > .mag__project__page > ul > li > a {
+  width: 100%;
+  height: 100%;
+}
+
+.mag > .mag__project__page > ul > li > a > picture {
+  width: 100%;
+  height: 100%;
+}
+
+.mag > .mag__project__page > ul > li > a > picture > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: none;
+}
+
+.mag > .mag__project__page > ul > .page1 {
+  font-family: "Pretendard";
+  height: 2.125rem;
+  line-height: 1.875rem;
+  padding: 0 0.125rem;
+  color: #232323;
+  border-bottom: 0.0625rem solid #000;
+}
+
+.mag > .mag__project__page > ul > .page2 {
+  font-family: "Pretendard";
+  height: 2.125rem;
+  line-height: 2.125rem;
+  padding: 0 0.125rem;
+  color: #a9a9a9;
+  font-weight: 400;
+}
+
+/* project2 page css */
+
+.mag > .mag__project__page > ul > .underline {
+  font-family: "Pretendard";
+  height: 2.125rem;
+  line-height: 1.875rem;
+  padding: 0 0.125rem;
+  color: #232323;
+  border-bottom: 0.0625rem solid #000000;
+}
+
+.mag > .mag__project__page > ul > .notunderline {
+  font-family: "Pretendard";
+  height: 2.125rem;
+  line-height: 1.875rem;
+  padding: 0 0.125rem;
+  color: #a9a9a9;
+  font-weight: 400;
+}
+
+/* press css */
+.mag > .mag__first > ul > .project1 {
+  text-decoration: none;
+}
+
+.mag > .mag__first > ul > .press1 {
+  text-decoration: underline;
+}
+
+/* 반응형 */
+@media screen and (max-width: 768px) {
+  .mag {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    padding: 1rem;
+    margin: 10vh auto 0;
+  }
+
+  .mag > .mag__first {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+  }
+
+  .mag > .mag__first > h2 {
+    display: none;
+  }
+
+  .mag__project > ul {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 3rem;
+  }
+
+  .mag__project > ul > li > a > picture {
+    width: 100%;
+    height: 100%;
+  }
+
+  .mag__project > ul > li > a > picture > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .mag > .mag__project__page {
+    gap: 0;
+  }
+
+  .mag > .mag__project__page > ul {
+    display: flex;
+    flex-wrap: wrap; /* 한 줄에 여러 li 가능 */
+    gap: 1rem; /* 요소 간격 */
+    justify-content: center;
+    gap: 0;
+  }
+
+  .mag > .mag__project__page > ul > li {
+    flex: 0 0 50px; /* 원하는 고정 너비 */
+
+    width: 100%;
+    height: 30px; /* 원하는 고정 높이 */
+    border: 1px solid #d0d1d4;
+    box-sizing: border-box; /* border가 width/height에 포함되도록 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .mag > .mag__project__page > ul > li > a {
+    width: 100%;
+    height: 100%;
+  }
+
+  .mag > .mag__project__page > ul > li > a > picture {
+    width: 100%;
+    height: 100%;
+  }
+
+  .mag > .mag__project__page > ul > li > a > picture > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .mag > .mag__project__page > ul > .page1 {
+    height: 30px; /* li 높이와 동일 */
+    line-height: 30px; /* 숫자를 세로 중앙 정렬 */
+    padding: 0; /* 원하면 패딩으로 높이 확보 */
+    text-align: center;
+    border-bottom: 3px solid #000000;
+    color: #232323;
+    font-weight: 700;
+  }
+
+  .mag > .mag__project__page > ul > .page2 {
+    height: 30px; /* li 높이와 동일 */
+    line-height: 30px; /* 숫자를 세로 중앙 정렬 */
+    padding: 0; /* 원하면 패딩으로 높이 확보 */
+    text-align: center;
+    color: #232323;
+    font-weight: 700;
+  }
+
+  .mag > .mag__project__page > ul > .underline {
+    height: 30px; /* li 높이와 동일 */
+    line-height: 30px; /* 숫자를 세로 중앙 정렬 */
+    padding: 0; /* 원하면 패딩으로 높이 확보 */
+    text-align: center;
+    border-bottom: 3px solid #000000;
+    color: #232323;
+    font-weight: 700;
+  }
+
+  .mag > .mag__project__page > ul > .notunderline {
+    height: 30px; /* li 높이와 동일 */
+    line-height: 30px; /* 숫자를 세로 중앙 정렬 */
+    padding: 0; /* 원하면 패딩으로 높이 확보 */
+    text-align: center;
+    color: #232323;
+    font-weight: 700;
+  }
+}

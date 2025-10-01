@@ -1,5 +1,10 @@
 const main = document.querySelector("#main");
-const links = document.querySelectorAll("header a");
+const aside = document.querySelector(".aside");
+const moduleCache = {};
+
+aside.addEventListener("click", () => {
+  window.scrollTo({ top: 0, behavior: "auto" });
+});
 
 // main 부분만 변화 => index.html 에 css 연결 필수
 const loadPage = async (url, addHistory = true) => {
@@ -12,13 +17,15 @@ const loadPage = async (url, addHistory = true) => {
     if (!newMain) return;
 
     main.innerHTML = newMain.innerHTML;
+    window.scrollTo({ top: 0, behavior: "auto" });
 
+    // history 추가
     if (addHistory) history.pushState({ url }, "", url);
 
-    // 새로 로드된 main 내부 링크 처리
+    // main 내부 a태그 처리
     main.querySelectorAll("a").forEach((a) => {
       const href = a.getAttribute("href");
-      if (href && href.startsWith("/laveree/page/")) {
+      if (href && href.startsWith("/Laveree/")) {
         a.addEventListener("click", (e) => {
           e.preventDefault();
           loadPage(href);
@@ -26,22 +33,37 @@ const loadPage = async (url, addHistory = true) => {
       }
     });
 
-    // shop.html이면 모듈 import 후 초기화
-    if (url.includes("/laveree/page/shop.html")) {
-      const module = await import("/laveree/js/shop.js");
-      if (module.initShop) module.initShop();
+    // 페이지별 모듈 초기화
+    if (url.includes("/Laveree/index.html")) {
+      if (!moduleCache.index) {
+        moduleCache.index = await import("/Laveree/js/index.js");
+      }
+      moduleCache.index.initIndex?.();
+    } else if (url.includes("/Laveree/page/shop.html")) {
+      if (!moduleCache.shop) {
+        moduleCache.shop = await import("/Laveree/js/shop.js");
+      }
+      moduleCache.shop.initShop?.();
     }
   } catch (err) {
     console.error("페이지 로드 에러:", err);
   }
 };
 
-links.forEach((link) => {
+// 전체 a 태그 처리
+document.querySelectorAll("a").forEach((link) => {
   link.addEventListener("click", (e) => {
+    console.log(`눌린것: ${link}`);
     e.preventDefault();
-    const url = link.href;
+    const url = new URL(link.href).pathname;
+    if (url === location.pathname) return;
     loadPage(url);
   });
+});
+
+// 맨 처음 실행
+window.addEventListener("DOMContentLoaded", () => {
+  loadPage(location.pathname, false);
 });
 
 // 뒤로 가기 / 앞으로 가기
@@ -49,26 +71,31 @@ window.addEventListener("popstate", (e) => {
   if (e.state && e.state.url) {
     loadPage(e.state.url, false);
   } else {
-    loadPage("/laveree/index.html", false);
+    loadPage("/Laveree/index.html", false);
   }
+
+  window.scrollTo({ top: 0, behavior: "auto" });
 });
 
 // sangwon's
 // hero
-const swiperA = new Swiper(".swiperA", {
-  spaceBetween: 0,
-  pagination: {
-    el: ".swiper-pagination-A",
-    clickable: true,
-  },
-});
-const swiperB = new Swiper(".swiperB", {
-  slidesPerView: 3,
-  spaceBetween: 30,
-  freeMode: Boolean,
-  loop: true,
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-});
+export const initIndex = () => {
+  new Swiper(".swiperA", {
+    spaceBetween: 0,
+    pagination: {
+      el: ".swiper-pagination-A",
+      clickable: true,
+    },
+  });
+
+  new Swiper(".swiperB", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    freeMode: Boolean,
+    loop: true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+};
