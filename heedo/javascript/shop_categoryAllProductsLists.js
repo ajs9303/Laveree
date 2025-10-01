@@ -1,4 +1,4 @@
-export const productLists = [
+const productLists = [
   {
     name: "STAIN REMOVER",
     price: "36,000원",
@@ -235,11 +235,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
       // 3. 상품 목록 필터링
       productItems.forEach((item) => {
-        if (item.classList.contains(selectedCategory)) {
-          item.classList.remove("hidden");
-        } else {
-          item.classList.add("hidden");
-        }
+        item.classList.contains(selectedCategory)
+          ? item.classList.remove("hidden")
+          : item.classList.add("hidden");
       });
       // 4. 클릭 시 브라우저 상단 img.src 변경
       photoTop.src =
@@ -248,11 +246,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
       // 카테고리 hover after
       fixedHoverAfter.forEach((after) => {
-        if (after.classList.contains(selectedCategory)) {
-          after.classList.add("fixed");
-        } else {
-          after.classList.remove("fixed");
-        }
+        after.classList.contains(selectedCategory)
+          ? after.classList.add("fixed")
+          : after.classList.remove("fixed");
       });
     });
   });
