@@ -47,11 +47,17 @@
 .mainHeader__nav__right {
   position: relative;
   z-index: 9999;
+  display: flex;
+  align-items: center;
 }
 .mainHeader__nav__right__ul {
   display: flex;
   justify-content: flex-end;
   gap: 0.8rem;
+}
+.ri-search-line {
+  display: flex;
+  justify-content: center;
 }
 .mainHeader__nav__right__ul > li {
   width: 4rem;
@@ -206,4 +212,41 @@
 }
 #STORE:hover > .storehiddenbox {
   display: block;
+}
+@media screen and (max-width: 768px) {
+  .logo {
+    width: 4rem;
+    height: 1rem;
+  }
+}
+.mainHeader__nav {
+  padding: 0.5rem 1rem;
+}
+.mainHeader__nav__left {
+  gap: 3rem;
+}
+.mainHeader__nav__div__ul > li > span {
+  font-size: 0.3rem;
+}
+.mainHeader__nav__div__h1 {
+  width: 3.5rem;
+}
+.mainHeader__nav__div__ul {
+  gap: 1.5rem;
+}
+.mainHeader__nav__right__ul {
+  gap: 0.1rem;
+}
+.mainHeader__nav__right__ul > li {
+  width: 2.5rem;
+}
+.mainHeader__nav__right__ul > li > span {
+  font-size: 0.3rem;
+}
+.ri-search-line {
+  width: 2rem;
+  font-size: 0.3rem;
+}
+.mainHeader__nav__right {
+  padding: 8px 0 0;
 }

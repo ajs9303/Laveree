@@ -32,7 +32,7 @@
 }
 .swiper-slide__textbox__downp {
   color: white;
-  font-size: 1rem;
+  font-size: 5%;
 }
 .herobackgroundimg__btn {
   margin-top: 3rem;
@@ -81,4 +81,9 @@
   background-image: url(../../image/mainhero/main_visual22.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+}
+@media screen and (max-width: 768px) {
+  .mainhero {
+    height: 30vh;
+  }
 }
