@@ -84,7 +84,7 @@ document.querySelectorAll("a").forEach((link) => {
 
 // 맨 처음 실행
 window.addEventListener("DOMContentLoaded", () => {
-  loadPage(location.pathname, false);
+  loadPage("/Laveree/index.html", false);
 });
 
 // 뒤로 가기 / 앞으로 가기
