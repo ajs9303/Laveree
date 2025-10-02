@@ -35,7 +35,7 @@ const loadPage = async (url, addHistory = true) => {
     });
 
     // 페이지별 모듈 초기화
-    if (url.includes("/Laveree/index.html")) {
+    if (url.includes("/Laveree/") || url.includes("/Laveree/index.html")) {
       if (!moduleCache.index) {
         moduleCache.index = await import("/Laveree/js/index.js");
       }
