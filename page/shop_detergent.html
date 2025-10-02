@@ -3,19 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LAVEREE</title>
+    <title>SHOP_DETERGENT</title>
     <script src="/Laveree/js/shop.js" type="module"></script>
   </head>
   <!-- shop categories -->
   <body>
     <main>
+      <!-- 전체 컨테이너 -->
       <section id="sectionShop">
         <div id="container">
+          <!-- 브라우저 최상단 이미지 -->
           <div id="topSide">
             <picture id="photoTop">
               <img
                 id="photoThis"
-                src="/Laveree/image/shop/topImages/shop_all_image.jpg"
+                src="/Laveree/image/shop/topImages/shop_detergent_image.jpg"
                 alt=""
               />
             </picture>
@@ -25,25 +27,42 @@
             <div id="userList">
               <ul>
                 <li id="category ALL" class="categoryLists">
-                  <div class="categoryTag ALL fixed">ALL</div>
+                  <a href="/Laveree/page/shop_all.html" class="categoryTag ALL"
+                    >ALL
+                  </a>
                 </li>
                 <li id="category DETERGENT" class="categoryLists">
-                  <div class="categoryTag DETERGENT">DETERGENT</div>
+                  <a
+                    href="/Laveree/page/shop_detergent.html"
+                    class="categoryTag DETERGENT fixed"
+                    >DETERGENT
+                  </a>
                 </li>
                 <li id="category REMOVER" class="categoryLists">
-                  <div class="categoryTag REMOVER">REMOVER</div>
+                  <a
+                    href="/Laveree/page/shop_remover.html"
+                    class="categoryTag REMOVER"
+                    >REMOVER
+                  </a>
                 </li>
                 <li id="category GIFT" class="categoryLists">
-                  <div class="categoryTag GIFT">GIFT</div>
+                  <a
+                    href="/Laveree/page/shop_gift.html"
+                    class="categoryTag GIFT"
+                    >GIFT
+                  </a>
                 </li>
                 <li id="category ACC" class="categoryLists">
-                  <div class="categoryTag ACC">ACC</div>
+                  <a href="/Laveree/page/shop_acc.html" class="categoryTag ACC"
+                    >ACC
+                  </a>
                 </li>
               </ul>
             </div>
             <ul id="productsGrid"></ul>
           </div>
 
+          <!-- 하단 텍스트 -->
           <div id="lowerTexts">
             <p class="comment">
               우리의 라버리는 피부에 자극이 되는 독한 화학물질을 모두 배제하여

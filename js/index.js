@@ -39,11 +39,31 @@ const loadPage = async (url, addHistory = true) => {
         moduleCache.index = await import("/Laveree/js/index.js");
       }
       moduleCache.index.initIndex?.();
-    } else if (url.includes("/Laveree/page/shop.html")) {
+    } else if (url.includes("/Laveree/page/shop_all.html")) {
       if (!moduleCache.shop) {
         moduleCache.shop = await import("/Laveree/js/shop.js");
       }
-      moduleCache.shop.initShop?.();
+      moduleCache.shop.initShop?.("ALL");
+    } else if (url.includes("/Laveree/page/shop_acc.html")) {
+      if (!moduleCache.shop) {
+        moduleCache.shop = await import("/Laveree/js/shop.js");
+      }
+      moduleCache.shop.initShop?.("ACC");
+    } else if (url.includes("/Laveree/page/shop_detergent.html")) {
+      if (!moduleCache.shop) {
+        moduleCache.shop = await import("/Laveree/js/shop.js");
+      }
+      moduleCache.shop.initShop?.("DETERGENT");
+    } else if (url.includes("/Laveree/page/shop_gift.html")) {
+      if (!moduleCache.shop) {
+        moduleCache.shop = await import("/Laveree/js/shop.js");
+      }
+      moduleCache.shop.initShop?.("GIFT");
+    } else if (url.includes("/Laveree/page/shop_remover.html")) {
+      if (!moduleCache.shop) {
+        moduleCache.shop = await import("/Laveree/js/shop.js");
+      }
+      moduleCache.shop.initShop?.("REMOVER");
     }
   } catch (err) {
     console.error("페이지 로드 에러:", err);
@@ -83,19 +103,34 @@ export const initIndex = () => {
   new Swiper(".swiperA", {
     spaceBetween: 0,
     pagination: {
-      el: ".swiper-pagination-A",
+      el: ".swiper-pagination",
       clickable: true,
     },
   });
 
   new Swiper(".swiperB", {
     slidesPerView: 3,
-    spaceBetween: 30,
+    spaceBetween: 20,
     freeMode: Boolean,
     loop: true,
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
+  });
+
+  const phonelefthiddenbox = document.querySelector("#phonelefthiddenbox");
+  const phoneburger = document.querySelector("#phoneburger");
+  const phonex = document.querySelector("#phonex");
+
+  phoneburger.addEventListener("click", () => {
+    phoneburger.classList.toggle("displaynone");
+    phonex.classList.toggle("displaynone");
+    phonelefthiddenbox.classList.add("boom");
+  });
+  phonex.addEventListener("click", () => {
+    phoneburger.classList.toggle("displaynone");
+    phonex.classList.toggle("displaynone");
+    phonelefthiddenbox.classList.remove("boom");
   });
 };
