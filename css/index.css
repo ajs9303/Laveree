@@ -1,7 +1,4 @@
 /* main */
-#mainContainer {
-}
-
 main {
   flex: 1;
 }
@@ -15,12 +12,10 @@ main {
   position: relative;
   height: 100%;
 }
-
 .swiper-pagination {
   position: absolute;
   bottom: 5%;
 }
-
 .swiper-slide img {
   display: block;
   width: 100%;
@@ -30,7 +25,7 @@ main {
 .swiper-slide__textbox > .libre-caslon-text-regular > span::after {
   content: "";
   position: absolute;
-  top: -50px;
+  top: -35px;
   left: 0;
   width: 100%;
   height: 100%;
@@ -50,6 +45,15 @@ main {
   color: white;
   font-size: 1.4rem;
 }
+.BrandBoxa {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
 .herobackgroundimg__btn {
   margin-top: 3rem;
   font-size: 0.8rem;
@@ -63,15 +67,15 @@ main {
   color: white;
 }
 .libre-caslon-text-regular > span {
-  font-size: 9rem;
+  font-size: 6rem;
   font-family: "Cafe24LovingU";
   line-height: 0.35;
   position: relative;
 }
-.swiper-slide__textbox__upp > span::after {
+.libre-caslon-text-regular > span::after {
   content: "";
   position: absolute;
-  top: -3.5rem;
+  top: -2rem;
   left: 0;
   width: 100%;
   height: 100%;
@@ -98,14 +102,28 @@ main {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.BrandContainera {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.BrandPicturea {
+  width: 50%;
+  height: 100%;
+}
 
 /* mainsecond.css */
 .mainSecondSection {
   height: 100vh;
+  position: relative;
 }
 
 .mainBox {
   display: flex;
+  flex-direction: row-reverse;
   justify-content: space-between;
   align-items: center;
   width: 100%;
@@ -298,8 +316,13 @@ footer {
 
 @media (max-width: 768px) {
   /* mainhero.css */
+  main {
+    margin-top: 4rem;
+  }
+
   .mainhero {
-    height: 50vh;
+    height: 29vh;
+    position: relative;
   }
   .swiper-slide__textbox {
     width: 100%;
@@ -310,23 +333,59 @@ footer {
     align-items: center;
     font-size: 1rem;
     color: white;
+    line-height: 1.5;
+    gap: 1rem;
   }
   .swiper-slide__textbox__downp {
     color: white;
     font-size: 0.8rem;
   }
   .herobackgroundimg__btn {
-    margin-top: 2rem;
+    margin-top: 1rem;
     font-size: 0.5rem;
     padding: 0.8rem 1.5rem;
     background-color: white;
     border: none;
     transition: all 0.5s;
   }
+  .swiper-pagination {
+    display: none;
+  }
+  .swiper-slide__textbox__upp {
+    font-size: 0.7rem;
+  }
+  .libre-caslon-text-regular > span {
+    font-size: 2rem;
+  }
+  .swiper-slide__textbox > .libre-caslon-text-regular > span::after {
+    top: -11px;
+  }
+  .BrandBoxa {
+    padding: 0;
+    width: 100%;
+    height: 80%;
+  }
+  .BrandPicture {
+    width: 100%;
+  }
+  .BrandContainera {
+    height: 80vh;
+    flex-direction: column-reverse;
+    gap: 1rem;
+  }
+  .reverse {
+    flex-direction: column;
+  }
 
   /* mainsecond.css */
+  .mainBox {
+    height: 70%;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
   .mainSecondSection {
-    height: 46vh;
+    height: 100%;
   }
   .mainBox_innertext {
     width: 90%;
@@ -338,6 +397,12 @@ footer {
   .lastbtn {
     font-size: 0.5rem;
     padding: 0.7rem 1.5rem;
+  }
+  .listSlide {
+    height: 100%;
+  }
+  .mainBox_innertext {
+    margin-left: 0;
   }
 
   /* footer.css */
