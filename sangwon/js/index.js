@@ -2,13 +2,13 @@
 const swiperA = new Swiper(".swiperA", {
   spaceBetween: 0,
   pagination: {
-    el: ".swiper-pagination-A",
+    el: ".swiper-pagination",
     clickable: true,
   },
 });
 const swiperB = new Swiper(".swiperB", {
   slidesPerView: 3,
-  spaceBetween: 30,
+  spaceBetween: 20,
   freeMode: Boolean,
   loop: true,
   navigation: {
