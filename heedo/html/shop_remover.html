@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SHOP</title>
+    <title>SHOP_REMOVER</title>
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -33,7 +33,7 @@
     <!-- js -->
     <script
       type="module"
-      src="/Laveree-main/heedo/javascript/shop_index.js"
+      src="/Laveree-main/heedo/javascript/shop_remover.js"
       defer
     ></script>
   </head>
@@ -56,7 +56,7 @@
           <picture id="photoTop"
             ><img
               id="photoThis"
-              src="/Laveree-main/heedo/shop_images/topImages/shop_all_image.jpg"
+              src="/Laveree-main/heedo/shop_images/topImages/shop_remover_image.jpg"
               alt=""
           /></picture>
         </div>
@@ -65,27 +65,47 @@
           <div id="userList">
             <ul>
               <li data-filter="ALL" id="categoryAll" class="categoryLists">
-                <div class="categoryTag ALL fixed">ALL</div>
+                <a
+                  href="http://127.0.0.1:5500/Laveree-main/heedo/html/shop_all.html"
+                  class="categoryTag ALL"
+                  >ALL</a
+                >
               </li>
               <li
                 data-filter="DETERGENT"
                 id="categoryDetergent"
                 class="categoryLists"
               >
-                <div class="categoryTag DETERGENT">DETERGENT</div>
+                <a
+                  href="http://127.0.0.1:5500/Laveree-main/heedo/html/shop_detergent.html"
+                  class="categoryTag DETERGENT"
+                  >DETERGENT</a
+                >
               </li>
               <li
                 data-filter="REMOVER"
                 id="categoryRemover"
                 class="categoryLists"
               >
-                <div class="categoryTag REMOVER">REMOVER</div>
+                <a
+                  href="http://127.0.0.1:5500/Laveree-main/heedo/html/shop_remover.html"
+                  class="categoryTag REMOVER fixed"
+                  >REMOVER</a
+                >
               </li>
               <li data-filter="GIFT" id="categoryGift" class="categoryLists">
-                <div class="categoryTag GIFT">GIFT</div>
+                <a
+                  href="http://127.0.0.1:5500/Laveree-main/heedo/html/shop_gift.html"
+                  class="categoryTag GIFT"
+                  >GIFT</a
+                >
               </li>
               <li data-filter="ACC" id="categoryAcc" class="categoryLists">
-                <div class="categoryTag ACC">ACC</div>
+                <a
+                  href="http://127.0.0.1:5500/Laveree-main/heedo/html/shop_acc.html"
+                  class="categoryTag ACC"
+                  >ACC</a
+                >
               </li>
             </ul>
           </div>
