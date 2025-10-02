@@ -1,4 +1,4 @@
-const productLists = [
+export const productLists = [
   {
     name: "STAIN REMOVER",
     price: "36,000원",
@@ -199,6 +199,11 @@ const dur = {
 };
 
 const topImage = document.querySelector("#photoThis");
+
+if (window.innerWidth < 768) {
+  topImage.src =
+    "/Laveree-main/heedo/shop_images/topImages/shop_all_mobile.jpg";
+}
 
 document.addEventListener("DOMContentLoaded", () => {
   const grid = document.querySelector("#productsGrid");

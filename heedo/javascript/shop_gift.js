@@ -200,6 +200,11 @@ const dur = {
 
 const topImage = document.querySelector("#photoThis");
 
+if (window.innerWidth < 768) {
+  topImage.src =
+    "/Laveree-main/heedo/shop_images/topImages/shop_gift_mobile.jpg";
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   const grid = document.querySelector("#productsGrid");
 

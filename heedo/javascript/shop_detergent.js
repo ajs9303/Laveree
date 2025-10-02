@@ -190,6 +190,7 @@ const productLists = [
     stock: "available",
   },
 ];
+
 const kf = [{ opacity: 0 }, { opacity: 1 }];
 const dur = {
   duration: 600,
