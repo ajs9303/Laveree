@@ -191,101 +191,62 @@ const productLists = [
   },
 ];
 
-const photoTop = document.querySelector("#photoThis");
-const topImg = {
-  ALL: "/Laveree-main/heedo/shop_images/topImages/shop_all_image.jpg",
-  DETERGENT:
-    "/Laveree-main/heedo/shop_images/topImages/shop_detergent_image.jpg",
-  REMOVER: "/Laveree-main/heedo/shop_images/topImages/shop_remover_image.jpg",
-  GIFT: "/Laveree-main/heedo/shop_images/topImages/shop_gift_image.jpg",
-  ACC: "/Laveree-main/heedo/shop_images/topImages/shop_acc_image.jpg",
-};
-
 document.addEventListener("DOMContentLoaded", () => {
   const grid = document.querySelector("#productsGrid");
 
-  productLists.forEach((v) => {
-    // ul(상품 매대 그리드)태그, 안에 li 로 물건 정렬 할 것.
+  productLists
+    .filter((x) => x.categoryType.includes("ALL"))
+    .forEach((v) => {
+      // ul(상품 매대 그리드)태그, 안에 li 로 물건 정렬 할 것.
 
-    // grid(ul) 내부
-    const prdLis = document.createElement("li");
-    prdLis.classList.add("prdLis", ...v.categoryType);
-    // ul 자식, 아래 요소 부모
-    const prdLisPic = document.createElement("picture");
-    prdLisPic.id = "prdLisPic";
-    // 물건 픽쳐, prdLis 자식
-    const prdLisPicImg = document.createElement("img");
-    prdLisPicImg.id = "prdLisPicImg";
-    // 물건 이미지, prdLisPic 자식, v.imgSrc 삽입
-    const prdLisDesc = document.createElement("div");
-    prdLisDesc.id = "prdLisDesc";
-    // 물건 설명, prdLis 자식
-    const prdLisDescDetail = document.createElement("div");
-    prdLisDescDetail.id = "prdLisDescDetail";
-    // 이름 및 가격, space-between 사용, prdLisDesc 자식
-    const prdLisDescDetailName = document.createElement("span");
-    prdLisDescDetailName.id = "prdLisDescDetailName";
-    // 이름, prdLisDescDetail 자식, v.name 삽입
-    const prdLisDescDetailPrice = document.createElement("span");
-    prdLisDescDetailPrice.id = "prdLisDescDetailPrice";
-    // 가격, prdLisDescDetail 자식, v.price 삽입
-    const prdLisDescDetailUse = document.createElement("span");
-    prdLisDescDetailUse.id = "prdLisDescDetailUse";
-    // 최하위 설명, prdLisDesc 자식, v.details 삽입
+      // grid(ul) 내부
+      const prdLis = document.createElement("li");
+      prdLis.classList.add("prdLis", ...v.categoryType);
+      // ul 자식, 아래 요소 부모
+      const prdLisPic = document.createElement("picture");
+      prdLisPic.id = "prdLisPic";
+      // 물건 픽쳐, prdLis 자식
+      const prdLisPicImg = document.createElement("img");
+      prdLisPicImg.id = "prdLisPicImg";
+      // 물건 이미지, prdLisPic 자식, v.imgSrc 삽입
+      const prdLisDesc = document.createElement("div");
+      prdLisDesc.id = "prdLisDesc";
+      // 물건 설명, prdLis 자식
+      const prdLisDescDetail = document.createElement("div");
+      prdLisDescDetail.id = "prdLisDescDetail";
+      // 이름 및 가격, space-between 사용, prdLisDesc 자식
+      const prdLisDescDetailName = document.createElement("span");
+      prdLisDescDetailName.id = "prdLisDescDetailName";
+      // 이름, prdLisDescDetail 자식, v.name 삽입
+      const prdLisDescDetailPrice = document.createElement("span");
+      prdLisDescDetailPrice.id = "prdLisDescDetailPrice";
+      // 가격, prdLisDescDetail 자식, v.price 삽입
+      const prdLisDescDetailUse = document.createElement("span");
+      prdLisDescDetailUse.id = "prdLisDescDetailUse";
+      // 최하위 설명, prdLisDesc 자식, v.details 삽입
 
-    const prdLisStock = document.createElement("div");
-    prdLisStock.id = "prdLisStock";
-    // 품절 이미지 div, prdLis 자식
-    const prdLisStockSoldout = document.createElement("img");
-    // 품절 이미지, prdLisStock 자식
+      const prdLisStock = document.createElement("div");
+      prdLisStock.id = "prdLisStock";
+      // 품절 이미지 div, prdLis 자식
+      const prdLisStockSoldout = document.createElement("img");
+      // 품절 이미지, prdLisStock 자식
 
-    // 품절 여부 분류
-    v.stock == "sold-out"
-      ? (prdLisStockSoldout.src =
-          "/Laveree-main/heedo/shop_images/icons/productIcon_soldout.gif")
-      : null;
+      // 품절 여부 분류
+      v.stock == "sold-out"
+        ? (prdLisStockSoldout.src =
+            "/Laveree-main/heedo/shop_images/icons/productIcon_soldout.gif")
+        : null;
 
-    (prdLisDescDetailName.innerText = v.name),
-      (prdLisDescDetailPrice.innerText = v.price),
-      (prdLisDescDetailUse.innerText = v.details),
-      (prdLisPicImg.src = v.imgSrc);
+      (prdLisDescDetailName.innerText = v.name),
+        (prdLisDescDetailPrice.innerText = v.price),
+        (prdLisDescDetailUse.innerText = v.details),
+        (prdLisPicImg.src = v.imgSrc);
 
-    grid.appendChild(prdLis);
-    prdLis.append(prdLisPic, prdLisDesc, prdLisStock);
-    prdLisStock.appendChild(prdLisStockSoldout);
-    prdLisPic.appendChild(prdLisPicImg);
-    prdLisDesc.append(prdLisDescDetail, prdLisDescDetailUse);
-    prdLisDescDetail.append(prdLisDescDetailName, prdLisDescDetailPrice);
-  });
-
-  // 1. 필요한 DOM 요소
-  const filterLists = document.querySelectorAll(".categoryLists");
-  // 상품 렌더링 후, 모든 상품 아이템(li)
-  const productItems = document.querySelectorAll(".prdLis");
-
-  // 2. 각 필터 버튼에 '클릭' 이벤트를 추가
-  filterLists.forEach((button) => {
-    button.addEventListener("click", () => {
-      const selectedCategory = button.getAttribute("data-filter");
-      const fixedHoverAfter = document.querySelectorAll(".categoryTag");
-
-      // 3. 상품 목록 필터링
-      productItems.forEach((item) => {
-        item.classList.contains(selectedCategory)
-          ? item.classList.remove("hidden")
-          : item.classList.add("hidden");
-      });
-      // 4. 클릭 시 브라우저 상단 img.src 변경
-      photoTop.src =
-        topImg[selectedCategory] ||
-        "/Laveree-main/heedo/shop_images/topImages/shop_all_image.jpg";
-
-      // 카테고리 hover after
-      fixedHoverAfter.forEach((after) => {
-        after.classList.contains(selectedCategory)
-          ? after.classList.add("fixed")
-          : after.classList.remove("fixed");
-      });
+      grid.appendChild(prdLis);
+      prdLis.append(prdLisPic, prdLisDesc, prdLisStock);
+      prdLisStock.appendChild(prdLisStockSoldout);
+      prdLisPic.appendChild(prdLisPicImg);
+      prdLisDesc.append(prdLisDescDetail, prdLisDescDetailUse);
+      prdLisDescDetail.append(prdLisDescDetailName, prdLisDescDetailPrice);
     });
-  });
 });
