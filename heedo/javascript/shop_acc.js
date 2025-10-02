@@ -191,6 +191,15 @@ const productLists = [
   },
 ];
 
+const kf = [{ opacity: 0 }, { opacity: 1 }];
+const dur = {
+  duration: 600,
+  fill: "forwards",
+  easing: "ease-out",
+};
+
+const topImage = document.querySelector("#photoThis");
+
 document.addEventListener("DOMContentLoaded", () => {
   const grid = document.querySelector("#productsGrid");
 
@@ -248,5 +257,8 @@ document.addEventListener("DOMContentLoaded", () => {
       prdLisPic.appendChild(prdLisPicImg);
       prdLisDesc.append(prdLisDescDetail, prdLisDescDetailUse);
       prdLisDescDetail.append(prdLisDescDetailName, prdLisDescDetailPrice);
+
+      topImage.animate(kf, dur);
+      prdLis.animate(kf, dur);
     });
 });
