@@ -36,12 +36,7 @@
   height: 100%;
   object-fit: cover;
 }
-.libre-caslon-text-regular > span {
-  font-size: 120px;
-  font-family: "Cafe24LovingU";
-  line-height: 0.35;
-  position: relative;
-}
+
 .libre-caslon-text-regular > span::after {
   content: "";
   position: absolute;
@@ -76,12 +71,6 @@
   text-align: center;
 }
 
-.libre-caslon-text-regular > span {
-  font-size: 120px;
-  font-family: "Cafe24LovingU";
-  line-height: 0.35;
-  position: relative;
-}
 .BrandSecond > .libre-caslon-text-regular > span::after {
   content: "";
   position: absolute;
@@ -110,5 +99,13 @@
   .learn {
     margin-top: 0.8rem;
     font-size: 0.8rem;
+  }
+
+  .BrandPicture {
+    width: 100%;
+    height: 100%;
+  }
+  .libre-caslon-text-regular > span::after {
+    top: -11px;
   }
 }
