@@ -8,6 +8,7 @@
 .margintop {
   margin-top: 80px;
 }
+
 .BrandBox {
   width: 50%;
   height: 100vh;
@@ -30,6 +31,17 @@
   height: 100vh;
 }
 .BrandPicture > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.BrandVideoPicture {
+  width: 100%;
+  height: 90%;
+}
+
+.BrandVideoPicture > video {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -62,6 +74,11 @@
   align-items: center;
   gap: 50px;
 }
+
+.science {
+  background-image: url(/laveree/image/our_story/science_full_img1.jpg);
+}
+
 .BrandSecond > h5 {
   font-size: 26px;
   color: white;

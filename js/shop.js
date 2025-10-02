@@ -1,6 +1,6 @@
 import { refresh } from "/Laveree/js/common.js";
 
-const topImg = {
+export const topImg = {
   ALL: "/laveree/image/shop/topImages/shop_all_image.jpg",
   DETERGENT: "/laveree/image/shop/topImages/shop_detergent_image.jpg",
   REMOVER: "/laveree/image/shop//topImages/shop_remover_image.jpg",
@@ -8,7 +8,8 @@ const topImg = {
   ACC: "/laveree/image/shop/topImages/shop_acc_image.jpg",
 };
 
-const productLists = [
+// shop_all.js
+export const productLists = [
   {
     name: "STAIN REMOVER",
     price: "36,000원",
