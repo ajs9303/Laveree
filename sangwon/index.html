@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/main/mainhero.css" />
     <link rel="stylesheet" href="css/main/mainsecond.css" />
     <link rel="stylesheet" href="css/our_story/our_story_hero.css" />
+    <link rel="stylesheet" href="css/main/phone.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
@@ -30,6 +31,49 @@
   <body>
     <header id="mainHeader" class="mainHeader">
       <nav class="mainHeader__nav">
+        <div class="phoneheader">
+          <div id="phoneburger"><i class="ri-menu-line phoneburger"></i></div>
+          <div id="phonex" class="displaynone">
+            <i class="ri-close-large-line phonex"></i>
+          </div>
+          <div class="phonelogo"><img src="image/logo.svg" alt="" /></div>
+          <div class="phoneheader__right">
+            <div><i class="ri-search-line phoneserch"></i></div>
+            <div><i class="ri-shopping-bag-line phonebag"></i></div>
+          </div>
+          <div id="phonelefthiddenbox" class="phonelefthiddenbox">
+            <section class="phonelefthiddenbox__UPBOX">
+              <div class="phonelefthiddenbox__UPBOX__text">
+                <p>BRAND</p>
+                <div><i class="ri-add-line"></i></div>
+              </div>
+              <div class="phonelefthiddenbox__UPBOX__text">
+                <p>SHOP</p>
+                <div><i class="ri-add-line"></i></div>
+              </div>
+              <div class="phonelefthiddenbox__UPBOX__text">
+                <p>MAGAZINE</p>
+                <div><i class="ri-add-line"></i></div>
+              </div>
+              <div class="phonelefthiddenbox__UPBOX__text">
+                <p>COMMUNITY</p>
+                <div><i class="ri-add-line"></i></div>
+              </div>
+              <div class="phonelefthiddenbox__UPBOX__text">
+                <p>STORE</p>
+                <div><i class="ri-add-line"></i></div>
+              </div>
+              <div class="line"></div>
+            </section>
+
+            <section class="phonelefthiddenbox__DOWNBOX">
+              <div>ACCOUNT</div>
+              <div>LOG IN</div>
+              <div>CART</div>
+            </section>
+          </div>
+        </div>
+
         <div class="mainHeader__nav__left">
           <h1 class="mainHeader__nav__div__h1">
             <a href="https://laveree.co.kr/index.html">
@@ -291,8 +335,8 @@
                 </article>
               </div>
             </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next seeoverflow"></div>
+            <div class="swiper-button-prev seeoverflow"></div>
           </div>
         </div>
         <div class="mainBox_innertext">

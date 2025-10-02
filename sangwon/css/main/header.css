@@ -216,39 +216,13 @@
   display: block;
 }
 @media screen and (max-width: 768px) {
-  .logo {
-    width: 5rem;
-    height: 1rem;
-  }
-  .mainHeader__nav {
-    padding: 0.5rem 1rem;
-  }
   .mainHeader__nav__left {
-    gap: 5rem;
-  }
-  .mainHeader__nav__div__ul > li > span {
-    font-size: 0.5rem;
-  }
-  .mainHeader__nav__div__h1 {
-    width: 3.5rem;
+    display: none;
   }
   .mainHeader__nav__div__ul {
-    gap: 2.2rem;
-  }
-  .mainHeader__nav__right__ul {
-    gap: 0.5rem;
-  }
-  .mainHeader__nav__right__ul > li {
-    width: 2.5rem;
-  }
-  .mainHeader__nav__right__ul > li > span {
-    font-size: 0.5rem;
-  }
-  .ri-search-line {
-    width: 2rem;
-    font-size: 0.7rem;
+    display: none;
   }
   .mainHeader__nav__right {
-    padding: 8px 0 0;
+    display: none;
   }
 }

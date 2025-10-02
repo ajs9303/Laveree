@@ -16,3 +16,20 @@ const swiperB = new Swiper(".swiperB", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+//phone
+
+const phonelefthiddenbox = document.querySelector("#phonelefthiddenbox");
+const phoneburger = document.querySelector("#phoneburger");
+const phonex = document.querySelector("#phonex");
+
+phoneburger.addEventListener("click", () => {
+  phoneburger.classList.toggle("displaynone");
+  phonex.classList.toggle("displaynone");
+  phonelefthiddenbox.classList.add("boom");
+});
+phonex.addEventListener("click", () => {
+  phoneburger.classList.toggle("displaynone");
+  phonex.classList.toggle("displaynone");
+  phonelefthiddenbox.classList.remove("boom");
+});
